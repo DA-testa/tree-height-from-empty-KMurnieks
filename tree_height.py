@@ -55,16 +55,16 @@ def main():
     
         filepath = './test/'  
         file = input()
-        folder = file + filepath
+        folder = filepath + file
         
         if "a" not in file:
             try:
-                with open(folder) as f:
+                with open(folder) as x:
                     n = int(f.readline())
-                    parents = list(map(int, f.readline().split()))
+                    parents = list(map(int, x.readline().split()))
                     
-            except Exception as e:
-                print("Error:(", str(e))
+            except Exception as ex:
+                print("Error:(", str(ex))
                 return
             
         else:
