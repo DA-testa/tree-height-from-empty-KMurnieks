@@ -53,15 +53,16 @@ def main():
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision 
     
-        path = './test/'  
+        filepath = './test/'  
         file = input()
-        folder = path + file
+        folder = file + filepath
         
         if "a" not in file:
             try:
                 with open(folder) as f:
                     n = int(f.readline())
                     parents = list(map(int, f.readline().split()))
+                    
             except Exception as e:
                 print("Error:(", str(e))
                 return
