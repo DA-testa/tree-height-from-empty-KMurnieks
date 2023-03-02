@@ -11,7 +11,6 @@ def compute_height(n, parents):
     
     finder = [[] for _ in range(n)]
     root = None
-    #max_height = 0
     
     # Your code here
     
@@ -62,10 +61,10 @@ def main():
                 with open(folder) as x:
                     
                     n = int(x.readline())
-                    parents = list(map(int, x.readline().split()))    makes teh variable partents int othe list 
+                    parents = list(map(int, x.readline().split()))    #makes teh variable partents int othe list 
                     
             except Exception as ex:
-                print("Error:(", str(ex))   # 
+                print("Error:(", str(ex))   # More error printers
                 return
             
         else:
