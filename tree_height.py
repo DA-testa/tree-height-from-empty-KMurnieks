@@ -60,7 +60,7 @@ def main():
         if "a" not in file:
             try:
                 with open(folder) as x:
-                    n = int(f.readline())
+                    n = int(x.readline())
                     parents = list(map(int, x.readline().split()))
                     
             except Exception as ex:
