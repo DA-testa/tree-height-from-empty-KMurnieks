@@ -1,4 +1,4 @@
-# python3
+# python3 #Kristaps Murnieks 221RDB173
 
 import sys
 import threading
